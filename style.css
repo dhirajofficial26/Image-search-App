@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.6;
+}
+h1 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  border: solid 0.5 black;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 60%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+#search-button {
+  border: solid 0.5 black;
+  border-radius: 20px;
+  width: 7rem;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+}
+#search-button:hover {
+  color: #ffffff;
+  background-color: #030303;
+}
+
+.search-result-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-result-2 {
+  margin-bottom: 60px;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.search-result-2 img {
+  width: 100%;
+  /* height: auto; */
+  height: 200px;
+  object-fit: cover;
+}
+
+.search-result-2:hover img {
+  opacity: 0.8;
+}
+.search-result-2 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #030303;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.show-more {
+  background-color: #008cba;
+  font-size: 18px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 30px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10%;
+  display: none;
+}
+@media screen and(max-width:768px) {
+    .search-result-1{
+        padding: 20px;
+    }
+  .search-result-2 {
+    width: 45%;
+  }
+}
+@media screen and(max-width:488px) {
+  .search-result-2 {
+    width: 100%;
+  }
+}
