@@ -1,4 +1,4 @@
-const accessKey = '';
+const accessKey = 'EtaeTLd0mI4pAB0cNjRWmRjg9lhRZCjyXTew_Eaq8PI';
 const apiUrl = `https://cors-anywhere.herokuapp.com/https://api.unsplash.com/search/photos`;
 let currentPage = 1;
 
